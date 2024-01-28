@@ -71,7 +71,7 @@ section {
     margin: 0 auto;
     display: block;
     max-block-size: 500px 500px;
-    background-image: url("imagenes/Character.png");
+    background-image: url("images/Character.png");
     background-repeat: no-repeat;
     background-position: center;
 }
