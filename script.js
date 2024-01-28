@@ -1,5 +1,5 @@
 const textArea = document.querySelector(".text-area");
-const mensaje = document.querySelector(".mensaje");
+const mensaje = document.querySelector(".text-area-two");
 const encriptarBtn = document.querySelector(".btn-encriptar");
 const desencriptarBtn = document.querySelector(".btn-desencriptar");
 const copiarBtn = document.querySelector(".copiar");
@@ -29,7 +29,7 @@ function btnCopiar() {
 }
 
 function copiar() {
-    const copyText = document.querySelector(".mensaje");
+    const copyText = document.querySelector(".text-area-two");
     copyText.select();
     copyText.setSelectionRange(0,999999);
     navigator.clipboard.writeText(copyText.value);
@@ -37,7 +37,7 @@ function copiar() {
 }
 
 function encriptar(frase) {
-    let matrizCodigo = [["e", "enter"], ["é", "rtr"], ["i", "imes"],  ["í", "xxx"], ["a", "ai"], ["á", "jgg"], ["o", "ober"],  ["ó", "vxv"], ["u", "ufat"], ["¿", "csc"], ["?", "frf"],  ["¡", "nn"], ["!", "zzz"]];
+    let matrizCodigo = [["e", "enter"], ["é", "rtr"], ["i", "imes"],  ["í", "xxx"], ["a", "ai"], ["á", "jgg"], ["o", "ober"],  ["ó", "vxv"], ["u", "ufat"], ["¿", "csc"], ["?", "frf"],  ["¡", "ouyn"], ["!", "zzz"]];
     frase = frase.toLowerCase();
     for(let i= 0; i<matrizCodigo.length; i++){
         if(frase.includes(matrizCodigo[i][0])) {
@@ -49,7 +49,7 @@ function encriptar(frase) {
 
 
 function desencriptar(fraseDesencriptada) {
-    let matrizCodigo = [["e", "enter"], ["é", "rtr"], ["i", "imes"],  ["í", "xxx"], ["a", "ai"], ["á", "jgg"], ["o", "ober"],  ["ó", "vxv"], ["u", "ufat"], ["¿", "csc"], ["?", "frf"],  ["¡", "nn"], ["!", "zzz"]];
+    let matrizCodigo = [["e", "enter"], ["é", "rtr"], ["i", "imes"],  ["í", "xxx"], ["a", "ai"], ["á", "jgg"], ["o", "ober"],  ["ó", "vxv"], ["u", "ufat"], ["¿", "csc"], ["?", "frf"],  ["¡", "ouyn"], ["!", "zzz"]];
     fraseDesencriptada = fraseDesencriptada.toLowerCase();
     for(let i= 0; i<matrizCodigo.length; i++){
         if(fraseDesencriptada.includes(matrizCodigo[i][1])) {
